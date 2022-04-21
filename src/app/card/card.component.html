@@ -1,18 +1,24 @@
-
 <div class="row">
-    
-        <div class="product col-lg-3   col-centered" *ngFor="let product of products">
-            <div class="plant">
-                <img src="{{product.productImage}}" alt="" srcset="">
-                <h5>{{product.productName}}</h5>
-                <p>{{product.productDescription}}</p>
-                <button type="button" class="btn ">В корзину</button>    
-            </div>
-                             
-        </div>
-        
-    
-        
+  <div
+    class="product col-lg-4 col-md-6 col-sm-6"
+    *ngFor="let product of products"
+    (click)="onClick(product)"
+  >
+    <div class="plant">
+      <img src="{{ product.productImage }}" alt="" srcset="" />
+      <h5>{{ product.productName }}</h5>
+      <p>{{ product.productDescription }}</p>
+      <button type="button" class="btn">В корзину</button>
     </div>
-    
+  </div>
+</div>
 
+<div *ngIf="selectedProduct">
+  <div class="selected">
+    <span class="close">&times;</span>
+    <img src="{{ selectedProduct.productImage }}" alt="" srcset="" />
+    <h5>{{ selectedProduct.productName }}</h5>
+    <p>{{ selectedProduct.productDescription }}</p>
+    <p>{{ selectedProduct.productInformation }}</p>
+  </div>
+</div>

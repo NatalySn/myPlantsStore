@@ -8,11 +8,13 @@
    
 }
 .product{
-    
+    margin-top: 10%;
     text-align: center;
     height: 55vh ;
+    display: flex;
     
 .plant{
+    
     background-color: #eef5ed;
     box-shadow: 0 14px 28px #252725, 0 10px 10px rgba(0,0,0,0.22);
     @include greencolor;
@@ -27,8 +29,14 @@
     .btn{
         background-color: #305932;
         color:#eef5ed ;
+      
     }
 }
     
 
+}
+
+
+.selectedProduct{
+    background-color: #fff;
 }

@@ -1,4 +1,6 @@
 import { Component,OnInit} from '@angular/core';
+
+
 import { Product } from "../product";
 import { PRODUCTS } from "../products";
 
@@ -8,11 +10,18 @@ import { PRODUCTS } from "../products";
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  // productImage=products[1].productImage
-  // productName=products[1].productName
-  // productDescription = products[1].productDescription
+  selectedProduct?: Product;
   constructor() { }
   products = PRODUCTS;
   ngOnInit(): void {
+  }
+
+ 
+  
+  public onClick(product:Product): void {
+    this.selectedProduct = product;
+    
+    
+    
   }
 }

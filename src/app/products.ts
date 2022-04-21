@@ -1,273 +1,45 @@
 import { Product } from './product';
+let i=1;
 export const PRODUCTS:Product[] =[
+   
     {
-        productImage:"/assets/plant.png",
-  productName:"Ваше растение",
-  productDescription : "Далеко-далеко за словесными горами в стране."
-    },
-    {
-        productImage:"/assets/plant.png",
-  productName:"Eще растение",
-  productDescription : "Далеко-далеко за словесными горами в стране."
-    },
-    {
-      productImage:"/assets/plant.png",
-  productName:"Зеленое красивое",
-  productDescription : "Далеко-далеко за словесными горами в стране."
-    },
-    {
-      productImage:"/assets/plant.png",
-  productName:"Best Choise",
-  productDescription : "Далеко-далеко за словесными горами в стране."
-    },
-    {
+      id:i++,
       productImage:"/assets/plant.png",
 productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
+productDescription : "Далеко-далеко за словесными горами в стране.",
+productInformation : "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своих буквоград несколько сих которое парадигматическая ты, до гор сбить что маленький, даже дорогу последний власти агентство ведущими. Ручеек, большой. Инициал, строчка пор наш великий дал деревни выйти имени предупредила не. Первую, сбить он домах повстречался грустный сих текста? Одна гор океана семь скатился. Власти он не за послушавшись, имени агентство, мир приставка, языком вскоре взобравшись переулка? Эта свой своего до агентство, прямо на берегу, рукопись злых переулка бросил предупредила вдали маленький от всех жаренные раз текст даже подзаголовок рыбными текста ты домах он имеет рыбного! Живет буквоград проектах реторический даже большой."
   },
   {
+    id:i++,
       productImage:"/assets/plant.png",
 productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
+productDescription : "Далеко-далеко за словесными горами в стране.",
+productInformation : "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своих буквоград несколько сих которое парадигматическая ты, до гор сбить что маленький, даже дорогу последний власти агентство ведущими. Ручеек, большой. Инициал, строчка пор наш великий дал деревни выйти имени предупредила не. Первую, сбить он домах повстречался грустный сих текста? Одна гор океана семь скатился. Власти он не за послушавшись, имени агентство, мир приставка, языком вскоре взобравшись переулка? Эта свой своего до агентство, прямо на берегу, рукопись злых переулка бросил предупредила вдали маленький от всех жаренные раз текст даже подзаголовок рыбными текста ты домах он имеет рыбного! Живет буквоград проектах реторический даже большой."
+
   },
   {
+    id:i++,
     productImage:"/assets/plant.png",
 productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
+productDescription : "Далеко-далеко за словесными горами в стране.",
+productInformation : "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своих буквоград несколько сих которое парадигматическая ты, до гор сбить что маленький, даже дорогу последний власти агентство ведущими. Ручеек, большой. Инициал, строчка пор наш великий дал деревни выйти имени предупредила не. Первую, сбить он домах повстречался грустный сих текста? Одна гор океана семь скатился. Власти он не за послушавшись, имени агентство, мир приставка, языком вскоре взобравшись переулка? Эта свой своего до агентство, прямо на берегу, рукопись злых переулка бросил предупредила вдали маленький от всех жаренные раз текст даже подзаголовок рыбными текста ты домах он имеет рыбного! Живет буквоград проектах реторический даже большой."
+
   },
   {
+    id:i++,
     productImage:"/assets/plant.png",
 productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
+productDescription : "Далеко-далеко за словесными горами в стране.",
+productInformation : "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своих буквоград несколько сих которое парадигматическая ты, до гор сбить что маленький, даже дорогу последний власти агентство ведущими. Ручеек, большой. Инициал, строчка пор наш великий дал деревни выйти имени предупредила не. Первую, сбить он домах повстречался грустный сих текста? Одна гор океана семь скатился. Власти он не за послушавшись, имени агентство, мир приставка, языком вскоре взобравшись переулка? Эта свой своего до агентство, прямо на берегу, рукопись злых переулка бросил предупредила вдали маленький от всех жаренные раз текст даже подзаголовок рыбными текста ты домах он имеет рыбного! Живет буквоград проектах реторический даже большой."
+
   },
   {
-    productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-    productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
+  id:i++,
   productImage:"/assets/plant.png",
 productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
+productDescription : "Далеко-далеко за словесными горами в стране.",
+productInformation : "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своих буквоград несколько сих которое парадигматическая ты, до гор сбить что маленький, даже дорогу последний власти агентство ведущими. Ручеек, большой. Инициал, строчка пор наш великий дал деревни выйти имени предупредила не. Первую, сбить он домах повстречался грустный сих текста? Одна гор океана семь скатился. Власти он не за послушавшись, имени агентство, мир приставка, языком вскоре взобравшись переулка? Эта свой своего до агентство, прямо на берегу, рукопись злых переулка бросил предупредила вдали маленький от всех жаренные раз текст даже подзаголовок рыбными текста ты домах он имеет рыбного! Живет буквоград проектах реторический даже большой."
+
 },
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-productImage:"/assets/plant.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-},
-{
-  productImage:"/assets/plant.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране."
-} 
+ 
 ]
