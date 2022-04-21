@@ -1,0 +1,133 @@
+@mixin greencolor{
+    color:#071e06;
+    font-family: 'Playfair Display', serif;
+
+}
+
+
+.head{
+    height: 100vh;
+    .navbar{
+       position: relative;
+        a{
+            
+            @include greencolor;
+            font-weight: 500;
+        }
+        .navbar-brand{
+            font-style: italic;
+        }
+       
+    }
+    
+    img{
+        margin-top: -10%;
+    }
+    .row{
+        margin: 0
+    }
+    .description{
+        @include greencolor;
+        margin-top: 10%;
+        text-align: justify;
+        h1{
+            font-size: 2vw;
+            text-transform: uppercase;
+            
+        }
+        .rusPlants{
+            margin-left: 30%;
+        }
+        p{
+            margin-top: 3%;
+            font-size: 1vw;
+        }
+        .btn{
+            background-color: #305932;
+            color: #fff;
+        }
+    }
+    
+}
+
+
+
+
+
+@media screen and (min-width: 576px){
+.head{
+    height: 100vh;
+    .navbar{
+       position: relative;
+        a{
+            
+            @include greencolor;
+            font-weight: 500;
+        }
+        .navbar-brand{
+            font-style: italic;
+        }
+       
+    }
+    
+    
+    .description{
+        @include greencolor;
+        margin-top: 10%;
+        text-align: justify;
+        h1{
+            font-size: 2vw;
+            text-transform: uppercase;
+            
+        }
+        .rusPlants{
+            margin-left: 30%;
+        }
+        p{
+            margin-top: 3%;
+            font-size: 1vw;
+        }
+    }
+    
+}
+}
+
+
+@media screen and (max-width: 576px){
+    .head{
+        .navbar{
+            position: relative;
+             a{
+                 
+                 @include greencolor;
+                 font-weight: 500;
+             }
+             .navbar-brand{
+                 font-style: italic;
+             }
+            
+         }
+        img{
+            visibility: hidden;
+            position: absolute;
+        }
+        .description{
+            @include greencolor;
+            margin-top: 5%;
+            text-align: justify;
+            h1{
+                font-size: 5vw;
+            text-transform: uppercase;
+                
+            }
+            .rusPlants{
+                margin-left: 30%;
+            }
+            p{
+                margin-top: 3%;
+            font-size: 3vw;
+            }
+        }
+       
+    }
+}
