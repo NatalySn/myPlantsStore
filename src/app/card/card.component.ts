@@ -20,6 +20,8 @@ export class CardComponent implements OnInit {
   
   public onClick(product:Product): void {
     this.selectedProduct = product;
+    console.log(JSON.stringify(PRODUCTS.length));
+    
     
     
     

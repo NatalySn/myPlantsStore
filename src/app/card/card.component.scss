@@ -23,8 +23,8 @@
     margin-left: 15%;
    
     img{
-        margin-top: -10%;
-        height: 250px;
+        margin-top: 5%;
+        height: 25vh;
     }
     .btn{
         background-color: #305932;
@@ -36,7 +36,35 @@
 
 }
 
+    .modal{
+        @include greencolor;
+        .modal-dialog{
+            margin: 0;
+            margin-left: 20vw;
+          
+        }
+       
+        .modal-content{
+            width: 60vw;
+            img{
+                width: 17vw;
+                text-align: center;
+                margin-top: 1vh;
+                margin-left: 18vw;
+            }
+            h4{
+                text-align: center;
+            }
+            .description{
+                text-align: center;
+                font-weight: 500;
+            }
+        }
+        .close{
+            border: none;
+            background-color: #fff;
+            
+        }
+    }
 
-.selectedProduct{
-    background-color: #fff;
-}
+

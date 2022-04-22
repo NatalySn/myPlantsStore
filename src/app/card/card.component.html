@@ -3,6 +3,8 @@
     class="product col-lg-4 col-md-6 col-sm-6"
     *ngFor="let product of products"
     (click)="onClick(product)"
+    data-toggle="modal"
+    data-target="#myModal"
   >
     <div class="plant">
       <img src="{{ product.productImage }}" alt="" srcset="" />
@@ -14,11 +16,36 @@
 </div>
 
 <div *ngIf="selectedProduct">
-  <div class="selected">
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+          <h4 class="modal-title">{{ selectedProduct.productName }}</h4>
+        </div>
+        <div class="modal-body">
+          <img src="{{ selectedProduct.productImage }}" alt="" srcset="" />
+          <p class="description">{{ selectedProduct.productDescription }}</p>
+          <p>{{ selectedProduct.productInformation }}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div *ngIf="selectedProduct">
+  <div class="selectedProduct">
     <span class="close">&times;</span>
     <img src="{{ selectedProduct.productImage }}" alt="" srcset="" />
     <h5>{{ selectedProduct.productName }}</h5>
     <p>{{ selectedProduct.productDescription }}</p>
     <p>{{ selectedProduct.productInformation }}</p>
   </div>
-</div>
+</div> -->
