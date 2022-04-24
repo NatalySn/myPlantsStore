@@ -49,17 +49,44 @@
         <div class="modal-body">
           <img src="{{ selectedProduct.productImage }}" alt="" srcset="" />
           <p class="description">{{ selectedProduct.productDescription }}</p>
-          <p>{{ selectedProduct.productInformation }}</p>
+          <p class="information" >{{ selectedProduct.productInformation }}</p>
+          <div class="container" >
+            <ya-map [center]="[55.751952, 37.600739]" [zoom]="12">
+<!-- создает рандомную метку, но не на каждом продукте а на всю страницу новая метка((исправить)) -->
+                <ya-placemark (yaclick)="yaClick()"  [geometry]="[coordinate.first,coordinate.second]"></ya-placemark>
+
+            </ya-map>
+          </div>
+          <div *ngIf="clicked" class="yaMapClicked">
+            <h3>Заполните форму ниже и наш оператор свяжется с Вами!</h3>
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email адрес</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите email">
+                
+              </div>
+              <div class="form-group">
+                <label>Номер телефона:</label>
+                <input class="form-control" type="text" placeholder="8-____-___-__-__">
+                <label >ФИО:</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите ваши ФИО">
+              </div>
+              <button type="submit" class="btn ">Отправить</button>
+            </form>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">
-            Close
+            Закрыть
           </button>
+         
         </div>
       </div>
     </div>
   </div>
 </div>
+<!-- событие желательно на клик с вызовом формы
+ -->
 
 <!-- <div *ngIf="selectedProduct">
   <div class="selectedProduct">

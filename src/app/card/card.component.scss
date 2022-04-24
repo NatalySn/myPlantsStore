@@ -19,6 +19,7 @@
     background-color: #eef5ed;
     box-shadow: 0 14px 28px #252725, 0 10px 10px rgba(0,0,0,0.22);
     @include greencolor;
+    font-size: 2vh;
     height: 50vh;
     width: 70%;
     margin-left: 15%;
@@ -30,6 +31,10 @@
     .btn{
         background-color: #305932;
         color:#eef5ed ;
+        font-size: 2vh;
+        height: 5vh
+        
+
       
     }
 }
@@ -55,11 +60,35 @@
             }
             h4{
                 text-align: center;
+                font-size: 3vh;
             }
             .description{
                 text-align: center;
                 font-weight: 500;
+                font-size: 2.5vh;
             }
+            .information{
+                font-size: 2.3vh;
+            }
+            .container {
+                width: 50%;
+                height: 30vh;
+                
+              }
+              .yaMapClicked{
+                  h3{
+                    @include greencolor;
+                    font-size: 3vh;
+                    text-align: center;
+                    margin-top: 2vh;
+                  }
+                  button{
+                    @include greencolor;
+                      margin-top: 3vh;
+                      background-color: #305932;
+                      color:#eef5ed ;
+                  }
+              }
         }
         .close{
             border: none;
