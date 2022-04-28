@@ -11,6 +11,10 @@
           <li class="nav-item">
             <a class="nav-link" href="#productList">Каталог</a>
           </li>
+          <li class="nav-item">
+            
+            <a class="btn" data-toggle="modal" data-target="#cartModal" (click)="cartClick()" role="button">Корзина</a>
+          </li>
           
         </ul>
       </div>
@@ -37,3 +41,98 @@
 
 
 </div>
+
+<!-- CART -->
+
+<div *ngIf="cartOpened" >
+  <div class="modal" tabindex="-1" role="dialog" id="cartModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Корзина</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <section class="h-100"  >
+            <div class="container h-100 py-5">
+              <div class="row d-flex justify-content-center align-items-center h-100">
+                <div>
+          
+          
+                  <div class="card rounded-3 mb-4" *ngFor="let item of items;let number = index">
+                    <div class="card-body p-4">
+                      <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                          <img
+                            src="{{item.productImage}}"
+                            class="img-fluid rounded-3" alt="image of product">
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                          <p class="lead fw-normal mb-2">{{item.productName}}</p>
+                         
+                        </div>
+                        <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                            <i class="fas fa-minus"></i>
+                          </button>
+          
+                          <input id="form1" min="0" name="quantity" value="1" type="number"
+                            class="form-control form-control-sm" />
+          
+                          <button class="btn btn-link px-2"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                            <i class="fas fa-plus"></i>
+                          </button>
+                        </div>
+                        <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                          <h5 class="mb-0">{{item.productPrice}}₽</h5>
+                        </div>
+                        <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                          <a href="#!" (click)="deleteItem(number)" class="text-danger"><i class="icon-trash"></i> </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  
+          
+                 
+          
+                          
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="modal-footer">
+          <div class="cartBtn">
+            <button (click)="makeOrder()" type="button" class="btn "> Оформить заказ</button>
+            <div *ngIf="clicked" class="cartClicked">
+              <h3>Заполните форму ниже и наш оператор свяжется с Вами!</h3>
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email адрес</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите email">
+                  
+                </div>
+                <div class="form-group">
+                  <label>Номер телефона:</label>
+                  <input class="form-control" type="text" placeholder="8-____-___-__-__">
+                  <label >ФИО:</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите ваши ФИО">
+                </div>
+                <button type="submit" class="btn ">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

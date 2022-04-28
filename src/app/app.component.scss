@@ -52,7 +52,40 @@
 }
 
 
-
+.modal{
+    @include greencolor;
+    .modal-dialog{
+        margin: 0;
+        margin-left: 10vw;
+      
+    }
+   
+    .modal-content{
+        width: 80vw;
+        img{
+            width: 19vw;
+            
+        }
+        h5{
+            text-align: center;
+            font-size: 3vh;
+        }
+   
+          
+    }
+    .close{
+        border: none;
+        background-color: #fff;
+        
+    }
+    .cartBtn{
+        text-align: right;
+        .btn{
+            color: #fff;
+            background: #305932;
+        }
+    }
+}
 
 
 @media screen and (max-width: 576px){

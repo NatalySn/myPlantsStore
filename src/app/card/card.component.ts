@@ -15,13 +15,15 @@ export class CardComponent implements OnInit {
     
   }
   
-  addToCart(productToCart: Product) {
-    this.cartService.addToCart(productToCart);
+  addToCart(product: Product) {
+    this.cartService.addToCart(product);
     window.alert('Your product has been added to the cart!');
+   
+   
    
   }
   
-  
+ 
   // Открываем карточку товара по клику
 
   public onClick(product: Product): void {
@@ -34,7 +36,7 @@ export class CardComponent implements OnInit {
 
   notEmptyCard = true;
   notScrolly = true;
-  clicked=false
+  clicked=false;
   selectedProduct?: Product;
  
 

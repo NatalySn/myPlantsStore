@@ -23,6 +23,7 @@
       <img src="{{ product.productImage }}" alt="" srcset="" />
       <h5>{{ product.productName }}</h5>
       <p>{{ product.productDescription }}</p>
+      <p>{{ product.productPrice }}</p>
       </div>
      <div *ngIf="product">
       <button type="button" class="btn"(click)="addToCart(product)">В корзину</button>

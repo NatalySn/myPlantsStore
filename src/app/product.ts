@@ -3,5 +3,6 @@ export interface Product {
     productImage:any;
     productName:string;
     productDescription:string;
-    productInformation:string
+    productInformation:string;
+    productPrice:number
   }

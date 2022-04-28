@@ -6,9 +6,12 @@ import { Product } from "./product";
 })
 export class CartService {
   items: Product[] = [];
-  addToCart(productToCart: Product) {
-    this.items.push(productToCart);
+  addToCart(product: Product) {
+    this.items.push(product);
+    console.log(this.items);
   }
+
+  
 
   getItems() {
     return this.items;
