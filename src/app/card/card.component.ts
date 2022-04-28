@@ -3,6 +3,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { Coordinate } from "./coordinateInterface";
 import { Product } from '../product';
 import { PRODUCTS } from '../products';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-card',
@@ -10,8 +11,17 @@ import { PRODUCTS } from '../products';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent implements OnInit {
-  constructor() {}
-
+  constructor(private cartService: CartService) {
+    
+  }
+  
+  addToCart(productToCart: Product) {
+    this.cartService.addToCart(productToCart);
+    window.alert('Your product has been added to the cart!');
+   
+  }
+  
+  
   // Открываем карточку товара по клику
 
   public onClick(product: Product): void {
@@ -32,13 +42,16 @@ export class CardComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadInitPost();
+    
   }
   products: any;
+  
 
 //  ф-я подгрузки первых товаров
 
   loadInitPost() {
     this.products = PRODUCTS.slice(0, 3);
+    
   }
 
   // По скроллу грузим следующую партию товаров
