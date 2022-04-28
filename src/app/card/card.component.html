@@ -59,8 +59,7 @@
           <div class="container" >
             <ya-map [center]="[55.751952, 37.600739]" [zoom]="12">
 <!-- создает рандомную метку, но не на каждом продукте а на всю страницу новая метка((исправить)) -->
-                <ya-placemark (yaclick)="yaClick()"  [geometry]="[coordinate.first,coordinate.second]"></ya-placemark>
-
+                <ya-placemark (yaclick)="yaClick()"  [geometry]="[selectedProduct.coordinate.first,selectedProduct.coordinate.second]"></ya-placemark>
             </ya-map>
           </div>
           <div *ngIf="clicked" class="yaMapClicked">

@@ -110,24 +110,25 @@
         <div class="modal-footer">
           <div class="cartBtn">
             <button (click)="makeOrder()" type="button" class="btn "> Оформить заказ</button>
-            <div *ngIf="clicked" class="cartClicked">
-              <h3>Заполните форму ниже и наш оператор свяжется с Вами!</h3>
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Email адрес</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите email">
-                  
-                </div>
-                <div class="form-group">
-                  <label>Номер телефона:</label>
-                  <input class="form-control" type="text" placeholder="8-____-___-__-__">
-                  <label >ФИО:</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите ваши ФИО">
-                </div>
-                <button type="submit" class="btn ">Отправить</button>
-              </form>
-            </div>
+            
           </div>
+        </div>
+        <div *ngIf="clicked" class="cartClicked">
+          <h3>Заполните форму ниже и наш оператор свяжется с Вами!</h3>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email адрес</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите email">
+              
+            </div>
+            <div class="form-group">
+              <label>Номер телефона:</label>
+              <input class="form-control" type="text" placeholder="8-____-___-__-__">
+              <label >ФИО:</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите ваши ФИО">
+            </div>
+            <button type="submit" class="btn ">Отправить</button>
+          </form>
         </div>
       </div>
     </div>

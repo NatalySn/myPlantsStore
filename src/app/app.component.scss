@@ -3,6 +3,10 @@
     font-family: 'Playfair Display', serif;
 
 }
+@mixin button{
+    background-color: #305932;
+    color: #fff;
+}
 
 
 .head{
@@ -44,8 +48,7 @@
             font-size: 1vw;
         }
         .btn{
-            background-color: #305932;
-            color: #fff;
+            @include button();
         }
     }
     
@@ -64,7 +67,7 @@
     .modal-content{
         width: 80vw;
         img{
-            width: 19vw;
+            width: 7vw;
             
         }
         h5{
@@ -82,8 +85,16 @@
     .cartBtn{
         text-align: right;
         .btn{
-            color: #fff;
-            background: #305932;
+            @include button();
+        }
+    }
+    .cartClicked{
+        width: 70%;
+        text-align: left;
+        margin-left: 15%;
+        .btn{
+            @include button();
+            margin: 3% 0;
         }
     }
 }
