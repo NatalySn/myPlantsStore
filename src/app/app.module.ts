@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
 import { InfiniteScrollModule } from "ngx-infinite-scroll";
 import { AngularYandexMapsModule, YaConfig  } from 'angular8-yandex-maps';
 import { AppComponent } from './app.component';
@@ -22,6 +24,7 @@ const mapConfig: YaConfig = {
     InfiniteScrollModule,
     AngularYandexMapsModule.forRoot(mapConfig) ,
     HttpClientModule,
+    FormsModule
 
    
   ],

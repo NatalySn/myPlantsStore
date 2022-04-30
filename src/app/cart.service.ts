@@ -5,10 +5,18 @@ import { Product } from "./product";
   providedIn: 'root'
 })
 export class CartService {
+  
   items: Product[] = [];
   addToCart(product: Product) {
-    this.items.push(product);
-    console.log(this.items);
+   
+    const productExistInCart = this.items
+    .find(({productName}) => productName === product.productName); // find product by name
+       if (!productExistInCart) {
+         this.items.push({...product, num:1}); 
+         // enhance "porduct" opject with "num" property
+         return;
+       }
+       productExistInCart.num += 1;
   }
 
   

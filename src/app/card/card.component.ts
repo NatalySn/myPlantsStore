@@ -14,11 +14,12 @@ export class CardComponent implements OnInit {
   constructor(private cartService: CartService) {
     
   }
-  
+  // добавление продкута в корзину используя сервис
   addToCart(product: Product) {
     this.cartService.addToCart(product);
     window.alert(product.productName+' добавлен в корзину!');
-   
+    
+       
    
    
   }

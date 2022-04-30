@@ -1,6 +1,7 @@
-import { first } from "rxjs";
+
 
 export interface Product {
+  num:number
     id:number;
     productImage:any;
     productName:string;

@@ -40,7 +40,7 @@
 </div>
 
 
-
+<!-- создание модального окна кликнутого элемента -->
 
 <div *ngIf="selectedProduct">
   <div class="modal fade" id="myModal" role="dialog">
@@ -58,10 +58,11 @@
           <p class="information" >{{ selectedProduct.productInformation }}</p>
           <div class="container" >
             <ya-map [center]="[55.751952, 37.600739]" [zoom]="12">
-<!-- создает рандомную метку, но не на каждом продукте а на всю страницу новая метка((исправить)) -->
+<!-- создает рандомную метку на каждом продукте -->
                 <ya-placemark (yaclick)="yaClick()"  [geometry]="[selectedProduct.coordinate.first,selectedProduct.coordinate.second]"></ya-placemark>
             </ya-map>
           </div>
+          <!-- форма кликнутой метки на карте -->
           <div *ngIf="clicked" class="yaMapClicked">
             <h3>Заполните форму ниже и наш оператор свяжется с Вами!</h3>
             <form>
@@ -90,15 +91,3 @@
     </div>
   </div>
 </div>
-<!-- событие желательно на клик с вызовом формы
- -->
-
-<!-- <div *ngIf="selectedProduct">
-  <div class="selectedProduct">
-    <span class="close">&times;</span>
-    <img src="{{ selectedProduct.productImage }}" alt="" srcset="" />
-    <h5>{{ selectedProduct.productName }}</h5>
-    <p>{{ selectedProduct.productDescription }}</p>
-    <p>{{ selectedProduct.productInformation }}</p>
-  </div>
-</div> -->

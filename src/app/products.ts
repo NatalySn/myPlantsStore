@@ -17,6 +17,7 @@ const coordinates =[
 export const PRODUCTS:Product[] =[
    
     {
+      num:1,
       id:i++,
       productImage:"/assets/plant.png",
 productName:"Ваше растение",
@@ -28,6 +29,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
   },
   {
+    num:1,
     id:i++,
       productImage:"/assets/spring-flower-1.png",
 productName:"Eще растение",
@@ -38,6 +40,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
   },
   {
+    num:1,
     id:i++,
     productImage:"/assets/spring-flower-24.png",
 productName:"Зеленое красивое",
@@ -48,6 +51,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
   },
   {
+    num:1,
     id:i++,
     productImage:"/assets/spring-flower-27.png",
 productName:"Best Choise",
@@ -58,6 +62,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
   },
   {
+    num:1,
   id:i++,
   productImage:"/assets/spring-flower-31.png",
 productName:"Best Choise",
@@ -68,6 +73,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+  num:1,
   id:i++,
   productImage:"/assets/plant.png",
 productName:"Ваше растение",
@@ -79,6 +85,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
   productImage:"/assets/spring-flower-1.png",
 productName:"Eще растение",
@@ -89,6 +96,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-24.png",
 productName:"Зеленое красивое",
@@ -99,6 +107,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-27.png",
 productName:"Best Choise",
@@ -109,6 +118,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-31.png",
 productName:"Best Choise",
@@ -117,9 +127,8 @@ productInformation : "Далеко-далеко за словесными гор
 productPrice:699,
 coordinate:coordinates[Math.ceil(10*Math.random())],
 
-},
-
-{
+},    {
+  num:1,
   id:i++,
   productImage:"/assets/plant.png",
 productName:"Ваше растение",
@@ -131,6 +140,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
   productImage:"/assets/spring-flower-1.png",
 productName:"Eще растение",
@@ -141,6 +151,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-24.png",
 productName:"Зеленое красивое",
@@ -151,6 +162,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-27.png",
 productName:"Best Choise",
@@ -161,6 +173,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-31.png",
 productName:"Best Choise",
@@ -169,9 +182,8 @@ productInformation : "Далеко-далеко за словесными гор
 productPrice:699,
 coordinate:coordinates[Math.ceil(10*Math.random())],
 
-},
-
-{
+},    {
+  num:1,
   id:i++,
   productImage:"/assets/plant.png",
 productName:"Ваше растение",
@@ -183,6 +195,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
   productImage:"/assets/spring-flower-1.png",
 productName:"Eще растение",
@@ -193,6 +206,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-24.png",
 productName:"Зеленое красивое",
@@ -203,6 +217,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-27.png",
 productName:"Best Choise",
@@ -213,6 +228,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-31.png",
 productName:"Best Choise",
@@ -221,9 +237,8 @@ productInformation : "Далеко-далеко за словесными гор
 productPrice:699,
 coordinate:coordinates[Math.ceil(10*Math.random())],
 
-},
-
-{
+},    {
+  num:1,
   id:i++,
   productImage:"/assets/plant.png",
 productName:"Ваше растение",
@@ -235,6 +250,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
   productImage:"/assets/spring-flower-1.png",
 productName:"Eще растение",
@@ -245,6 +261,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-24.png",
 productName:"Зеленое красивое",
@@ -255,6 +272,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-27.png",
 productName:"Best Choise",
@@ -265,6 +283,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-31.png",
 productName:"Best Choise",
@@ -273,9 +292,8 @@ productInformation : "Далеко-далеко за словесными гор
 productPrice:699,
 coordinate:coordinates[Math.ceil(10*Math.random())],
 
-},
-
-{
+},    {
+  num:1,
   id:i++,
   productImage:"/assets/plant.png",
 productName:"Ваше растение",
@@ -287,6 +305,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
   productImage:"/assets/spring-flower-1.png",
 productName:"Eще растение",
@@ -297,6 +316,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-24.png",
 productName:"Зеленое красивое",
@@ -307,6 +327,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-27.png",
 productName:"Best Choise",
@@ -317,6 +338,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-31.png",
 productName:"Best Choise",
@@ -325,9 +347,8 @@ productInformation : "Далеко-далеко за словесными гор
 productPrice:699,
 coordinate:coordinates[Math.ceil(10*Math.random())],
 
-},
-
-{
+},    {
+  num:1,
   id:i++,
   productImage:"/assets/plant.png",
 productName:"Ваше растение",
@@ -339,6 +360,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
   productImage:"/assets/spring-flower-1.png",
 productName:"Eще растение",
@@ -349,6 +371,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-24.png",
 productName:"Зеленое красивое",
@@ -359,6 +382,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-27.png",
 productName:"Best Choise",
@@ -369,6 +393,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-31.png",
 productName:"Best Choise",
@@ -377,9 +402,8 @@ productInformation : "Далеко-далеко за словесными гор
 productPrice:699,
 coordinate:coordinates[Math.ceil(10*Math.random())],
 
-},
-
-{
+},    {
+  num:1,
   id:i++,
   productImage:"/assets/plant.png",
 productName:"Ваше растение",
@@ -391,6 +415,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
   productImage:"/assets/spring-flower-1.png",
 productName:"Eще растение",
@@ -401,6 +426,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-24.png",
 productName:"Зеленое красивое",
@@ -411,6 +437,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-27.png",
 productName:"Best Choise",
@@ -421,6 +448,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-31.png",
 productName:"Best Choise",
@@ -429,9 +457,8 @@ productInformation : "Далеко-далеко за словесными гор
 productPrice:699,
 coordinate:coordinates[Math.ceil(10*Math.random())],
 
-},
-
-{
+},    {
+  num:1,
   id:i++,
   productImage:"/assets/plant.png",
 productName:"Ваше растение",
@@ -443,6 +470,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
   productImage:"/assets/spring-flower-1.png",
 productName:"Eще растение",
@@ -453,6 +481,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-24.png",
 productName:"Зеленое красивое",
@@ -463,6 +492,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-27.png",
 productName:"Best Choise",
@@ -473,6 +503,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-31.png",
 productName:"Best Choise",
@@ -481,9 +512,8 @@ productInformation : "Далеко-далеко за словесными гор
 productPrice:699,
 coordinate:coordinates[Math.ceil(10*Math.random())],
 
-},
-
-{
+},    {
+  num:1,
   id:i++,
   productImage:"/assets/plant.png",
 productName:"Ваше растение",
@@ -495,6 +525,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
   productImage:"/assets/spring-flower-1.png",
 productName:"Eще растение",
@@ -505,6 +536,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-24.png",
 productName:"Зеленое красивое",
@@ -515,6 +547,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-27.png",
 productName:"Best Choise",
@@ -525,6 +558,7 @@ coordinate:coordinates[Math.ceil(10*Math.random())],
 
 },
 {
+num:1,
 id:i++,
 productImage:"/assets/spring-flower-31.png",
 productName:"Best Choise",

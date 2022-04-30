@@ -87,6 +87,7 @@
         .btn{
             @include button();
         }
+    
     }
     .cartClicked{
         width: 70%;
@@ -97,6 +98,15 @@
             margin: 3% 0;
         }
     }
+    .icon-trash{
+        color:#071e06;
+        text-decoration: none;
+    }
+    h6{
+        text-align: right;
+    }
+   
+   
 }
 
 
