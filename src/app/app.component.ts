@@ -17,13 +17,18 @@ export class AppComponent {
   items = this.cartService.getItems();
   totalAmount=0;
 totalPrice=0
+isDisabled:boolean
+
+
+
   // Исход клика по корзине
   // Вывод кол-ва товаров и общей цены
   cartClick(){
-    
+  
  this.cartOpened=true;
  this.totalAmount = Object.values(this.items).reduce((a, b) => a + b.num, 0);
   this.totalPrice = Object.values(this.items).reduce((a, b) => a + (b.num*b.productPrice), 0)
+
   }
  
   // изменение кол-ва товаров
@@ -43,12 +48,12 @@ totalPrice=0
       this.totalPrice=this.totalPrice-deleteRegularItem[index].num*deleteRegularItem[index].productPrice
     }
    
-    
+   
    
   }
   makeOrder(){
     this.clicked=true
-    console.log(Object.values(this.items).reduce((a, b) => a + b.num, 0));
+ 
   }
 
   

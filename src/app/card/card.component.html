@@ -23,7 +23,7 @@
       <img src="{{ product.productImage }}" alt="" srcset="" />
       <h5>{{ product.productName }}</h5>
       <p>{{ product.productDescription }}</p>
-      <p>{{ product.productPrice }}</p>
+      <p>{{ product.productPrice }} ₽</p>
       </div>
      <div *ngIf="product">
       <button type="button" class="btn"(click)="addToCart(product)">В корзину</button>
@@ -66,16 +66,17 @@
           <div *ngIf="clicked" class="yaMapClicked">
             <h3>Заполните форму ниже и наш оператор свяжется с Вами!</h3>
             <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email адрес</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите email">
-                
-              </div>
+             
               <div class="form-group">
                 <label>Номер телефона:</label>
                 <input class="form-control" type="text" placeholder="8-____-___-__-__">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email адрес</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите email">
+                  
+                </div>
                 <label >ФИО:</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите ваши ФИО">
+                <input type="text" class="form-control"  placeholder="Введите ваши ФИО">
               </div>
               <button type="submit" class="btn ">Отправить</button>
             </form>

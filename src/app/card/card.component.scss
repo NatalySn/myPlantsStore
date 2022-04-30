@@ -13,9 +13,9 @@
     text-align: center;
     height: 55vh ;
     display: flex;
-    
+    cursor: pointer;
 .plant{
-    
+    transition: 0.5s;
     background-color: #eef5ed;
     box-shadow: 0 14px 28px #252725, 0 10px 10px rgba(0,0,0,0.22);
     @include greencolor;
@@ -41,6 +41,16 @@
     
 
 }
+
+.product:hover{
+    .plant{
+        
+        transform: scale(1.05);
+}
+.btn:hover{
+    background-color: #203921;
+}}
+
 
     .modal{
         @include greencolor;
