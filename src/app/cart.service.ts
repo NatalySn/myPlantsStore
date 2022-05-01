@@ -17,6 +17,7 @@ export class CartService {
          return;
        }
        productExistInCart.num += 1;
+       
   }
 
   

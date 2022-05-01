@@ -32,8 +32,8 @@
         background-color: #305932;
         color:#eef5ed ;
         font-size: 2vh;
-        height: 5vh
-        
+        height: 5vh;
+        margin-top: -1vh;
 
       
     }
@@ -56,17 +56,20 @@
         @include greencolor;
         .modal-dialog{
             margin: 0;
-            margin-left: 20vw;
+            margin-left: 10vw;
           
         }
        
         .modal-content{
-            width: 60vw;
+            width: 80vw;
+            .modal-body{
+                padding: 0;
+            }
             img{
-                width: 17vw;
+                width: 20vw;
                 text-align: center;
                 margin-top: 1vh;
-                margin-left: 18vw;
+                margin-left: 30vw;
             }
             h4{
                 text-align: center;
@@ -78,17 +81,21 @@
                 font-size: 2.5vh;
             }
             .information{
+                width: 80%;
+                margin-left: 10%;
                 font-size: 2.3vh;
             }
             .container {
-                width: 50%;
+                width: 90%;
                 height: 30vh;
                 
               }
               .yaMapClicked{
+                width: 80%;
+                margin-left: 10%;
                   h3{
                     @include greencolor;
-                    font-size: 3vh;
+                    font-size: 2.5vh;
                     text-align: center;
                     margin-top: 2vh;
                   }

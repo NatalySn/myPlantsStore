@@ -1,6 +1,6 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, OnInit, HostListener } from '@angular/core';
-import { Coordinate } from "./coordinateInterface";
+
+import { Component, OnInit } from '@angular/core';
+
 import { Product } from '../product';
 import { PRODUCTS } from '../products';
 import { CartService } from '../cart.service';
@@ -14,22 +14,24 @@ export class CardComponent implements OnInit {
   constructor(private cartService: CartService) {
     
   }
+
   // добавление продкута в корзину используя сервис
   addToCart(product: Product) {
     this.cartService.addToCart(product);
-   
+  
     
        
    
    
   }
   
- 
+ selected=false
   // Открываем карточку товара по клику
-
-  public onClick(product: Product): void {
+  selectedProduct?: Product;
+  
+  clickProduct(product: Product): void {
     this.selectedProduct = product;
-   
+    this.selected=true;
     
     
   }
@@ -38,7 +40,7 @@ export class CardComponent implements OnInit {
   notEmptyCard = true;
   notScrolly = true;
   clicked=false;
-  selectedProduct?: Product;
+  
  
 
 // загружаем первые 3 поста после загрузки проекта
@@ -48,6 +50,7 @@ export class CardComponent implements OnInit {
     
   }
   products: any;
+ 
   
 
 //  ф-я подгрузки первых товаров

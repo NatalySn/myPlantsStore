@@ -12,21 +12,21 @@
     class="product col-lg-4 col-md-6 col-sm-6"
     #productCard
     
-    *ngFor="let product of products"
+    *ngFor="let product of products "
     
-    data-toggle="modal"
-    data-target="#myModal"
+ 
     
   >
     <div class="plant">
-      <div  class="clickPart" (click)="onClick(product)">
+      <div    data-toggle="modal"
+      data-target="#myModal"  class="clickPart" (click)="clickProduct(product)">
       <img src="{{ product.productImage }}" alt="" srcset="" />
       <h5>{{ product.productName }}</h5>
       <p>{{ product.productDescription }}</p>
       <p>{{ product.productPrice }} ₽</p>
       </div>
-     <div *ngIf="product">
-      <button type="button" class="btn"(click)="addToCart(product)">В корзину</button>
+     <div>
+      <button type="button" class="btn" (click)="addToCart(product)">В корзину</button>
      </div>
       
     </div>
@@ -42,53 +42,55 @@
 
 <!-- создание модального окна кликнутого элемента -->
 
-<div *ngIf="selectedProduct">
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">
-            &times;
-          </button>
-          <h4 class="modal-title">{{ selectedProduct.productName }}</h4>
-        </div>
-        <div class="modal-body">
-          <img src="{{ selectedProduct.productImage }}" alt="" srcset="" />
-          <p class="description">{{ selectedProduct.productDescription }}</p>
-          <p class="information" >{{ selectedProduct.productInformation }}</p>
-          <div class="container" >
-            <ya-map [center]="[55.751952, 37.600739]" [zoom]="12">
-<!-- создает рандомную метку на каждом продукте -->
-                <ya-placemark (yaclick)="yaClick()"  [geometry]="[selectedProduct.coordinate.first,selectedProduct.coordinate.second]"></ya-placemark>
-            </ya-map>
+  <div *ngIf="selectedProduct">
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+            <h4 class="modal-title">{{ selectedProduct.productName }}</h4>
           </div>
-          <!-- форма кликнутой метки на карте -->
-          <div *ngIf="clicked" class="yaMapClicked">
-            <h3>Заполните форму ниже и наш оператор свяжется с Вами!</h3>
-            <form>
-             
-              <div class="form-group">
-                <label>Номер телефона:</label>
-                <input class="form-control" type="text" placeholder="8-____-___-__-__">
+          <div class="modal-body">
+            <img src="{{ selectedProduct.productImage }}" alt="" srcset="" />
+            <p class="description">{{ selectedProduct.productDescription }}</p>
+            <p class="information" >{{ selectedProduct.productInformation }}</p>
+            <div class="container" >
+              <ya-map [center]="[55.751952, 37.600739]" [zoom]="12">
+  <!-- создает рандомную метку на каждом продукте -->
+                  <ya-placemark (yaclick)="yaClick()"  [geometry]="[selectedProduct.coordinate.first,selectedProduct.coordinate.second]"></ya-placemark>
+              </ya-map>
+            </div>
+            <!-- форма кликнутой метки на карте -->
+            <div *ngIf="clicked" class="yaMapClicked">
+              <h3>Заполните форму ниже и наш оператор свяжется с Вами!</h3>
+              <form>
+               
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Email адрес</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите email">
-                  
+                  <label>Номер телефона:</label>
+                  <input class="form-control" type="text" placeholder="8-____-___-__-__">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email адрес</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Введите email">
+                    
+                  </div>
+                  <label >ФИО:</label>
+                  <input type="text" class="form-control"  placeholder="Введите ваши ФИО">
                 </div>
-                <label >ФИО:</label>
-                <input type="text" class="form-control"  placeholder="Введите ваши ФИО">
-              </div>
-              <button type="submit" class="btn ">Отправить</button>
-            </form>
+                <button type="submit" class="btn ">Отправить</button>
+              </form>
+            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">
-            Закрыть
-          </button>
-         
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">
+              Закрыть
+            </button>
+           
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+

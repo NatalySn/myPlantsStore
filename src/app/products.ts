@@ -1,4 +1,4 @@
-import { Coordinate } from "./card/coordinateInterface";
+
 import { Product } from './product';
 let i=1;
 const coordinates =[

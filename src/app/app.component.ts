@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CartService } from "./cart.service";
-import { Product } from "./product";
+
 
 @Component({
   selector: 'app-root',
@@ -17,7 +17,6 @@ export class AppComponent {
   items = this.cartService.getItems();
   totalAmount=0;
 totalPrice=0
-isDisabled:boolean
 
 
 
