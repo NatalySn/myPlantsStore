@@ -9,5 +9,5 @@ export interface Product {
     productInformation:string;
     productPrice:number;
     coordinate:any;
-  
+    cartValue:string;
   }

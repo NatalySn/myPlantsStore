@@ -30,6 +30,35 @@ totalPrice=0
 
   }
  
+minusItem(index:any){
+  
+ 
+  if (this.items[index].num>0) {
+    
+     this.items[index].num--;
+
+    this.totalAmount=this.totalAmount-1;
+    this.totalPrice=this.totalPrice-this.items[index].productPrice;
+  
+  }
+  if (this.items[index].num===0) {
+    this.clicked=false;
+    this.deleteItem(index)
+   
+  }
+  
+  
+ 
+  
+}
+plusItem(index:any){
+  this.items[index].num++;
+ 
+   this.totalAmount=this.totalAmount+1;
+   this.totalPrice=this.totalPrice+this.items[index].productPrice;
+   this.items[index].cartValue="В корзине " + this.items[index].num + " шт."
+
+}
   // изменение кол-ва товаров
   // изменение вывода кол-ва товаров и цены
   deleteItem(index:any){
@@ -46,14 +75,17 @@ totalPrice=0
       this.totalAmount=this.totalAmount-deleteRegularItem[index].num
       this.totalPrice=this.totalPrice-deleteRegularItem[index].num*deleteRegularItem[index].productPrice
     }
-   
+    if (this.totalAmount===0) {
+      this.clicked=false
+    }
    
    
   }
   makeOrder(){
-    this.clicked=true
+    this.clicked = ! this.clicked
  
   }
+
 
   
   

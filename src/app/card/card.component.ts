@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
 import { PRODUCTS } from '../products';
 import { CartService } from '../cart.service';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-card',
@@ -14,32 +15,35 @@ export class CardComponent implements OnInit {
   constructor(private cartService: CartService) {
     
   }
-
+  
   // добавление продкута в корзину используя сервис
   addToCart(product: Product) {
+    
     this.cartService.addToCart(product);
   
+     
+      
+  
+    
     
        
    
    
   }
-  
- selected=false
+
   // Открываем карточку товара по клику
   selectedProduct?: Product;
   
   clickProduct(product: Product): void {
     this.selectedProduct = product;
-    this.selected=true;
-    
+   
     
   }
   // Задаем параметр пустого элемента массива и возможности прокрутки
 
   notEmptyCard = true;
   notScrolly = true;
-  clicked=false;
+  clicked:boolean=false;
   
  
 
@@ -92,6 +96,14 @@ export class CardComponent implements OnInit {
   // Яндекс карты --> работабщий код рандомайзера метки
   yaClick(){
     console.log("clicked");
-    this.clicked=true
+    this.clicked = ! this.clicked
+ 
   }
+
+  // Закрытие формы при нажатии закрывающих кнопок 
+  closeModal(){
+    this.clicked = false;
+  }
+ 
+ 
 }
