@@ -7,15 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "postinstall": "postinstall",
-    "prepare": "postinstall"
+    "postinstall": "ng build --prod"
+    
   },
-  "prepare": {
-    "<modulename>/path": "browserify lib/"
-  },
-  "postinstall": {
-    "<othermodule>/file": "link lib/"
-  },
+
   "private": true,
   "dependencies": {
     "@angular/animations": "~13.3.0",
