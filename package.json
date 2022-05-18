@@ -6,7 +6,15 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "postinstall": "postinstall",
+    "prepare": "postinstall"
+  },
+  "prepare": {
+    "<modulename>/path": "browserify lib/"
+  },
+  "postinstall": {
+    "<othermodule>/file": "link lib/"
   },
   "private": true,
   "dependencies": {
@@ -19,8 +27,10 @@
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "angular8-yandex-maps": "^13.2.0",
+    "file-system": "^2.2.2",
     "ngx-infinite-scroll": "^13.0.1",
     "ngx-spinner": "^13.1.1",
+    "postinstall": "^0.7.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -30,7 +40,7 @@
     "@angular/cli": "~13.3.2",
     "@angular/compiler-cli": "~13.3.0",
     "@types/jasmine": "~3.10.0",
-    "@types/node": "^12.11.1",
+    "@types/node": "^12.20.50",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",

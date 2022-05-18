@@ -12,7 +12,8 @@
 .head{
     height: 100vh;
     .navbar{
-       position: relative;
+       position: fixed ;
+       
         a{
             
             @include greencolor;
@@ -26,7 +27,7 @@
     }
     
     img{
-        margin-top: -10%;
+        margin-top: -7%;
     }
     .row{
         margin: 0

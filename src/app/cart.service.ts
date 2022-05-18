@@ -10,7 +10,7 @@ export class CartService {
   addToCart(product: Product) {
     
     const productExistInCart = this.items
-    .find(({productName}) => productName === product.productName); // ищем продукт по имени
+    .find(({id}) => id === product.id); // ищем продукт по id
        if (!productExistInCart) {
          this.items.push({...product, num:1}); 
      
@@ -29,9 +29,9 @@ export class CartService {
     return this.items;
   }
 
-  clearCart() {
-    this.items = [];
-    return this.items;
-  }
+  // clearCart() {
+  //   this.items = [];
+  //   return this.items;
+  // }
   constructor() { }
 }

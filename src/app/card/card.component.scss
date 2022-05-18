@@ -1,131 +1,112 @@
-
-@mixin greencolor{
-    color:#071e06;
-    font-family: 'Playfair Display', serif;
-
+@mixin greencolor {
+  color: #071e06;
+  font-family: "Playfair Display", serif;
 }
-.row{
-    margin: 0;
-   
+.row {
+  margin: 0;
 }
-.product{
-    margin-top: 10%;
-    text-align: center;
-    height: 55vh ;
-    display: flex;
-    cursor: pointer;
-.plant{
+.product {
+  margin-top: 10%;
+  text-align: center;
+  height: 55vh;
+  display: flex;
+  cursor: pointer;
+  .plant {
     transition: 0.5s;
     background-color: #eef5ed;
-    box-shadow: 0 14px 28px #252725, 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px #252725, 0 10px 10px rgba(0, 0, 0, 0.22);
     @include greencolor;
     font-size: 2vh;
     height: 50vh;
     width: 70%;
     margin-left: 15%;
-   
-    img{
-        margin-top: 5%;
-        height: 25vh;
-    }
-    .btn{
-        background-color: #305932;
-        color:#eef5ed ;
-        font-size: 2vh;
-        height: 5vh;
-        margin-top: -1vh;
 
-      
+    img {
+      margin-top: 5%;
+      height: 25vh;
+    }
+    .btn {
+      background-color: #305932;
+      color: #eef5ed;
+      font-size: 2vh;
+      height: 5vh;
+      margin-top: -1vh;
     }
 
     .btn:active {
-        background: #5d695d;
-        transform: translate(0em, 0.1em);
-        
-      }
-      .btn:focus{
-       
-        box-shadow: none;
-      }
-    
+      background: #5d695d;
+      transform: translate(0em, 0.1em);
     }
-
+    .btn:focus {
+      box-shadow: none;
+    }
+  }
 }
-    
 
-
-
-.product:hover{
-    .plant{
-        
-        transform: scale(1.05);
-}
-.btn:hover{
+.product:hover {
+  .plant {
+    transform: scale(1.05);
+  }
+  .btn:hover {
     background-color: #203921;
-    
-}}
+  }
+}
 
+.modal {
+  @include greencolor;
+  .modal-dialog {
+    margin: 0;
+    margin-left: 10vw;
+  }
 
-    .modal{
-        @include greencolor;
-        .modal-dialog{
-            margin: 0;
-            margin-left: 10vw;
-          
-        }
-       
-        .modal-content{
-            width: 80vw;
-            .modal-body{
-                padding: 0;
-            }
-            img{
-                width: 20vw;
-                text-align: center;
-                margin-top: 1vh;
-                margin-left: 30vw;
-            }
-            h4{
-                text-align: center;
-                font-size: 3vh;
-            }
-            .description{
-                text-align: center;
-                font-weight: 500;
-                font-size: 2.5vh;
-            }
-            .information{
-                width: 80%;
-                margin-left: 10%;
-                font-size: 2.3vh;
-            }
-            .container {
-                width: 90%;
-                height: 30vh;
-                
-              }
-              .yaMapClicked{
-                width: 80%;
-                margin-left: 10%;
-                  h3{
-                    @include greencolor;
-                    font-size: 2.5vh;
-                    text-align: center;
-                    margin-top: 2vh;
-                  }
-                  button{
-                    @include greencolor;
-                      margin-top: 3vh;
-                      background-color: #305932;
-                      color:#eef5ed ;
-                  }
-              }
-        }
-        .close{
-            border: none;
-            background-color: #fff;
-            
-        }
+  .modal-content {
+    width: 80vw;
+    .modal-body {
+      padding: 0;
     }
-
-
+    img {
+      width: 20vw;
+      text-align: center;
+      margin-top: 1vh;
+      margin-left: 30vw;
+    }
+    h4 {
+      text-align: center;
+      font-size: 3vh;
+    }
+    .description {
+      text-align: center;
+      font-weight: 500;
+      font-size: 2.5vh;
+    }
+    .information {
+      width: 80%;
+      margin-left: 10%;
+      font-size: 2.3vh;
+    }
+    .container {
+      width: 90%;
+      height: 30vh;
+    }
+    .yaMapClicked {
+      width: 80%;
+      margin-left: 10%;
+      h3 {
+        @include greencolor;
+        font-size: 2.5vh;
+        text-align: center;
+        margin-top: 2vh;
+      }
+      button {
+        @include greencolor;
+        margin-top: 3vh;
+        background-color: #305932;
+        color: #eef5ed;
+      }
+    }
+  }
+  .close {
+    border: none;
+    background-color: #fff;
+  }
+}

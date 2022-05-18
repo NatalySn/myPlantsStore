@@ -577,62 +577,6 @@ productInformation : "Далеко-далеко за словесными гор
 productPrice:699,
 coordinate:coordinates[Math.ceil(10*Math.random())],
 cartValue:'В корзину'
-},    {
-  num:1,
-  id:i++,
-  productImage:"/assets/plant.png",
-productName:"Ваше растение",
-productDescription : "Далеко-далеко за словесными горами в стране.",
-productInformation : "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своих буквоград несколько сих которое парадигматическая ты, до гор сбить что маленький, даже дорогу последний власти агентство ведущими.",
-productPrice:799,
-coordinate:coordinates[Math.ceil(10*Math.random())],
-cartValue:'В корзину'
-
-
-},
-{
-num:1,
-id:i++,
-  productImage:"/assets/spring-flower-1.png",
-productName:"Eще растение",
-productDescription : "Далеко-далеко за словесными горами в стране.",
-productInformation : "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своих буквоград несколько сих которое парадигматическая ты, до гор сбить что маленький, даже дорогу последний власти агентство ведущими. ",
-productPrice:999,
-coordinate:coordinates[Math.ceil(10*Math.random())],
-cartValue:'В корзину'
-},
-{
-num:1,
-id:i++,
-productImage:"/assets/spring-flower-24.png",
-productName:"Зеленое красивое",
-productDescription : "Далеко-далеко за словесными горами в стране.",
-productInformation : "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своих буквоград несколько сих которое парадигматическая ты, до гор сбить что маленький, даже дорогу последний власти агентство ведущими.",
-productPrice:299,
-coordinate:coordinates[Math.ceil(10*Math.random())],
-cartValue:'В корзину'
-},
-{
-num:1,
-id:i++,
-productImage:"/assets/spring-flower-27.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране.",
-productInformation : "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своих буквоград несколько сих которое парадигматическая ты, до гор сбить что маленький, даже дорогу последний власти агентство ведущими. ",
-productPrice:199,
-coordinate:coordinates[Math.ceil(10*Math.random())],
-cartValue:'В корзину'
-},
-{
-num:1,
-id:i++,
-productImage:"/assets/spring-flower-31.png",
-productName:"Best Choise",
-productDescription : "Далеко-далеко за словесными горами в стране.",
-productInformation : "Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Своих буквоград несколько сих которое парадигматическая ты, до гор сбить что маленький, даже дорогу последний власти агентство ведущими. ",
-productPrice:699,
-coordinate:coordinates[Math.ceil(10*Math.random())],
-cartValue:'В корзину'
 },
 
 
