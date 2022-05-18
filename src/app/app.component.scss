@@ -7,15 +7,17 @@
     background-color: #305932;
     color: #fff;
 }
+@mixin cartItems{
+    text-decoration: none;
+    color: #071e06;
+}
 
 
 .head{
     height: 100vh;
     .navbar{
        position: fixed ;
-       
-        a{
-            
+            a{
             @include greencolor;
             font-weight: 500;
         }
@@ -100,15 +102,13 @@
         }
     }
     .icon-trash{
-        color:#071e06;
-        text-decoration: none;
+        @include cartItems();
     }
     h6{
         text-align: right;
     }
    .numOfItems{
-       text-decoration: none;
-       color: #071e06;
+    @include cartItems();
        margin: 0 15%;
    }
    .itemsNum{
@@ -124,12 +124,9 @@
             position: relative;
              a{
                  
-                 @include greencolor;
                  font-weight: 500;
              }
-             .navbar-brand{
-                 font-style: italic;
-             }
+           
             
          }
         img{
@@ -137,12 +134,12 @@
             position: absolute;
         }
         .description{
-            @include greencolor;
+           
             margin-top: 5%;
             text-align: justify;
             h1{
                 font-size: 5vw;
-            text-transform: uppercase;
+          
                 
             }
             .rusPlants{
@@ -164,13 +161,10 @@
         .navbar{
             position: relative;
              a{
-                 
-                 @include greencolor;
+             
                  font-weight: 500;
              }
-             .navbar-brand{
-                 font-style: italic;
-             }
+          
             
          }
         img{
@@ -204,13 +198,10 @@
         .navbar{
            position: relative;
             a{
-                
-                @include greencolor;
+             
                 font-weight: 500;
             }
-            .navbar-brand{
-                font-style: italic;
-            }
+           
            
         }
         
@@ -221,12 +212,12 @@
             margin: 0
         }
         .description{
-            @include greencolor;
+            
             margin-top: 10%;
             text-align: justify;
             h1{
                 font-size: 2vw;
-                text-transform: uppercase;
+                
                 
             }
             .rusPlants{
@@ -236,10 +227,7 @@
                 margin-top: 3%;
                 font-size: 1vw;
             }
-            .btn{
-                background-color: #305932;
-                color: #fff;
-            }
+           
         }
         
         
