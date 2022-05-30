@@ -63,16 +63,17 @@ export class CardComponent implements OnInit {
   // ф-я подгрузки следующих товаров путем просиоединения к массиву товаров новых товаров из массива PRODUCTS,
   // пока карта товара не станет пустой у ф-я не прервется
   // setTimeOut для большей наглядности происходящего
-
+ 
   loadNextPost() {
     setTimeout(() => {
       const lastCard = this.products[this.products.length - 1];
       const lastCardId = lastCard.id;
       const newProducts = PRODUCTS.slice(lastCardId, lastCardId + 3);
       if (newProducts.length === 0) {
-        this.notEmptyCard = false;
+        this.products = this.products.concat(PRODUCTS.slice(0, 3));
       }
       this.products = this.products.concat(newProducts);
+      
       this.notScrolly = true;
     }, 500);
   }

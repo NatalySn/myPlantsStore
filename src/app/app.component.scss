@@ -1,35 +1,36 @@
 @mixin greencolor{
     color:#071e06;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif
 
 }
 @mixin button{
     background-color: #305932;
-    color: #fff;
+    color: #fff
 }
 @mixin cartItems{
     text-decoration: none;
-    color: #071e06;
+    color: #071e06
 }
-
 
 .head{
     height: 100vh;
     .navbar{
        position: fixed ;
+       background-color:rgb(255, 255, 255,0.7);
+       
             a{
             @include greencolor;
-            font-weight: 500;
+            font-weight: 500
         }
         .navbar-brand{
-            font-style: italic;
+            font-style: italic
         }
        
        
     }
     
     img{
-        margin-top: -7%;
+        margin-top: -7%
     }
     .row{
         margin: 0
@@ -40,18 +41,17 @@
         text-align: justify;
         h1{
             font-size: 2vw;
-            text-transform: uppercase;
-            
+            text-transform: uppercase            
         }
         .rusPlants{
-            margin-left: 40%;
+            margin-left: 40%
         }
         p{
             margin-top: 3%;
-            font-size: 1vw;
+            font-size: 1vw
         }
         .btn{
-            @include button();
+            @include button()
         }
     }
     
@@ -63,32 +63,32 @@
     @include greencolor;
     .modal-dialog{
         margin: 0;
-        margin-left: 10vw;
+        margin-left: 10vw
       
     }
    
     .modal-content{
         width: 80vw;
         img{
-            width: 7vw;
+            width: 7vw
             
         }
         h5{
             text-align: center;
-            font-size: 3vh;
+            font-size: 3vh
         }
    
           
     }
     .close{
         border: none;
-        background-color: #fff;
+        background-color: #fff
         
     }
     .cartBtn{
         text-align: right;
         .btn{
-            @include button();
+            @include button()
         }
     
     }
@@ -98,21 +98,21 @@
         margin-left: 15%;
         .btn{
             @include button();
-            margin: 3% 0;
+            margin: 3% 0
         }
     }
     .icon-trash{
-        @include cartItems();
+        @include cartItems()
     }
     h6{
-        text-align: right;
+        text-align: right
     }
    .numOfItems{
     @include cartItems();
-       margin: 0 15%;
+       margin: 0 15%
    }
    .itemsNum{
-       width: 70%;
+       width: 70%
    }
    
 }
@@ -124,31 +124,31 @@
             position: relative;
              a{
                  
-                 font-weight: 500;
+                 font-weight: 500
              }
            
             
          }
         img{
             visibility: hidden;
-            position: absolute;
+            position: absolute
         }
         .description{
            
             margin-top: 5%;
             text-align: justify;
             h1{
-                font-size: 5vw;
+                font-size: 5vw
           
                 
             }
             .rusPlants{
-                margin-left: 28%;
+                margin-left: 28%
             }
            
             p{
                 margin-top: 3%;
-            font-size: 3vw;
+            font-size: 3vw
             }
         }
        
@@ -162,31 +162,31 @@
             position: relative;
              a{
              
-                 font-weight: 500;
+                 font-weight: 500
              }
           
             
          }
         img{
             visibility: hidden;
-            position: absolute;
+            position: absolute
         }
         .description{
             @include greencolor;
             margin-top: 5%;
-            text-align: justify;
+            text-align: justify
             h1{
                 font-size: 3vw;
-            text-transform: uppercase;
+            text-transform: uppercase
                 
             }
             .rusPlants{
-                margin-left: 57%;
+                margin-left: 57%
             }
            
             p{
                 margin-top: 3%;
-            font-size: 2vw;
+            font-size: 2vw
             }
         }
        
@@ -199,14 +199,14 @@
            position: relative;
             a{
              
-                font-weight: 500;
+                font-weight: 500
             }
            
            
         }
         
         img{
-            margin-top: -10%;
+            margin-top: -10%
         }
         .row{
             margin: 0
@@ -216,16 +216,16 @@
             margin-top: 10%;
             text-align: justify;
             h1{
-                font-size: 2vw;
+                font-size: 2vw
                 
                 
             }
             .rusPlants{
-                margin-left: 40%;
+                margin-left: 40%
             }
             p{
                 margin-top: 3%;
-                font-size: 1vw;
+                font-size: 1vw
             }
            
         }
