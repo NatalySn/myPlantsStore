@@ -7,6 +7,7 @@ import { CartService } from './cart.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+ 
   constructor(private cartService: CartService) {}
   title = 'plantsStore';
 
@@ -17,8 +18,10 @@ export class AppComponent {
   totalAmount = 0;
   totalPrice = 0;
 
+
   // Исход клика по корзине
   // Вывод кол-ва товаров и общей цены
+
   cartClick() {
     this.cartOpened = true;
     this.totalAmount = Object.values(this.items).reduce((a, b) => a + b.num, 0);
